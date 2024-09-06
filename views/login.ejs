@@ -1,0 +1,22 @@
+<%- include("./partials/header")%>
+<!-- <%- include("./partials/nav")%> -->
+
+    <div class="flex flex-col items-center justify-center gap-5 py-10">
+        <h1 class="text-2xl font-semibold">Login</h1>
+        <form class="flex flex-col gap-6 py-5" action="/login" method="post">
+            <div class="flex flex-col">
+                <label>User Name</label>
+                <input class="border-b outline-none border-gray-400" type="text" name="username" placeholder="abc">
+            </div>
+
+            <div class="flex flex-col">
+                <label>Password</label>
+                <input class="border-b outline-none border-gray-400" type="password" name="password" placeholder="********">
+            </div>
+
+            <button class="border-2 border-gray-500 rounded py-2 px-5">Login</button>
+        </form>
+    </div>
+    
+
+    <%- include("./partials/footer")%>

@@ -1,0 +1,30 @@
+<%- include("./partials/header")%>
+<!-- <%- include("./partials/nav")%> -->
+    <div class="flex flex-col items-center justify-center gap-5 py-10">
+        <h1 class="text-2xl font-semibold">Register</h1>
+        <form class="flex flex-col gap-6 py-5" action="/register" method="post">
+            <div class="flex flex-col">
+                <label>User Name</label>
+                <input class="border-b outline-none border-gray-400" type="text" name="username" placeholder="abc">
+            </div>
+            <div class="flex flex-col">
+                <label>Email</label>
+                <input class="border-b outline-none border-gray-400" type="email" name="email" placeholder="abc@gmail.com">
+            </div>
+            <div class="flex flex-col">
+                <label>Password</label>
+                <input class="border-b outline-none border-gray-400" type="password" name="password" placeholder="********">
+            </div>
+            <div class="flex flex-col">
+                <label>Role</label>
+                <select name="role" id="">
+                    <option value="superAdmin">Super Admin</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+            </div>
+            <button class="border-2 border-gray-500 rounded py-2 px-5">Register</button>
+        </form>
+    </div>
+
+    <%- include("./partials/footer")%>

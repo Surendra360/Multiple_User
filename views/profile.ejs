@@ -1,0 +1,14 @@
+<%- include("./partials/header")%>
+<%- include("./partials/nav")%>
+
+<div class="flex flex-col items-center justify-center">
+  <h1 class="text-2xl font-semibold py-10">Profile</h1>
+  <div>
+    <h1 class="">User Name : <%=user.username%></h1>
+    <h1 class="">Email add.: <%=user.email%></h1>
+    <h1 class="">User Role : <%=user.role%></h1>
+  </div>
+  <a class="py-2 px-3 border rounded mt-10" href="/logout">Logout</a>
+</div>
+
+<%- include("./partials/footer")%>

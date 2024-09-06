@@ -1,0 +1,18 @@
+<%- include("./partials/header")%>
+<% if(user){%>
+<%- include("./partials/nav")%>
+<%}%>
+<div class="flex flex-col items-center justify-center">
+  <h1 class="text-2xl font-semibold py-10">Wellcome to home</h1>
+  <div>
+    <% if(!user){%>
+      <a class="border-2 border-gray-500 rounded py-2 px-5" href="/register"><button>Register</button></a>
+      <a class="border-2 border-gray-500 rounded py-2 px-5" href="/login"><button>Login</button></a>
+    <%}else{%>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos facilis natus possimus, perferendis aperiam voluptas doloremque rerum dolor nesciunt quae!</p>
+    <%}%>
+
+  </div>
+</div>
+
+<%- include("./partials/footer")%>

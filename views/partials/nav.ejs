@@ -1,0 +1,19 @@
+<div class="flex items-center justify-center">
+    <nav class="flex gap-5 text-lg py-5">
+
+    <% if(user){%>
+      <% if (user.role == "admin"){%>
+        
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        
+        <%} else if(user.role == "superAdmin"){%>
+          <a href="/">Home</a>
+          <a href="/profile">Profile</a>
+          <a href="/contact">Contact</a>
+        <%}else{%>
+          <a href="/contact">Contact</a>
+          <%}%>
+<%}%>
+    </nav>
+  </div>
